@@ -83,7 +83,7 @@ local function handleDonations(donationFileName, nodeId, nodeCount)
 
                     local stateId = donorStates[donorId]
                     assert(stateId ~= nil,
-                        ("Donor ID not found: %s"):format(donorIdStr))
+                        ("Donor ID not found: %s"):format(donorId))
 
                     if stateId then
                         stateSums[stateId] = stateSums[stateId] + sum
